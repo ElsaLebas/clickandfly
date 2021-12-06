@@ -1,8 +1,8 @@
 # README
 
 ### About
-I am building this Planes Market Place to practice Rails.<br>
-My inspirations are : [airbnb](https://www.clickandboat.com/) and [clickandboat](https://www.airbnb.com/).<br>
+This is a **market place for planes**, my goal is to practice Rails.<br>
+Inspirations : [airbnb](https://www.clickandboat.com/) and [clickandboat](https://www.airbnb.com/).<br>
 
 ### Get Started
 To get started, run : 

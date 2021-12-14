@@ -21,7 +21,9 @@ You can find the draf (really it is an ugly draft!) [here](https://miro.com/app/
 ### Database
 You can have a look at the DB schema [here](https://kitt.lewagon.com/db/48003) or below :
 
-<img width="400" alt="Capture d’écran 2021-12-06 à 14 04 56" src="https://user-images.githubusercontent.com/60131956/144851026-389e4d77-9885-4daf-8f24-ac4271831dd0.png">
+![Capture d’écran 2021-12-14 à 12 26 00](https://user-images.githubusercontent.com/60131956/145989807-fa63e591-cfef-4b3c-9610-77797618c495.png)
+
+
 
 ### Users Stories
 I will work on the following user stories : 

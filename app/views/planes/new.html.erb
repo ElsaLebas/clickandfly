@@ -1,0 +1,11 @@
+<h1>Here Create a new plane to rent</h1>
+
+<%= simple_form_for(@plane) do |f| %>
+  <%= f.input :plane_name %>
+  <%= f.input :plane_type, collection: Plane::TYPES %>
+  <%= f.input :capacity, collection: Plane::CAPACITIES %>
+  <%= f.input :price, input_html: { min: 0 } %>
+  <%= f.input :location %>
+  <%= f.button :submit, "Create", :class => "btn btn-primary" %>
+<% end %>
+

@@ -57,6 +57,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # User authentication Devise
 gem 'devise'
+# Pundit gem > Authorization
+gem 'pundit'
 
 # Simple form
 gem 'simple_form'
+
+

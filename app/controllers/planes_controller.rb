@@ -1,6 +1,6 @@
 class PlanesController < ApplicationController
     def index # all
-        @planes = Plane.all
+        @planes = policy_scope(Plane).order(created_at: :desc)
     end
 
     def show # 1

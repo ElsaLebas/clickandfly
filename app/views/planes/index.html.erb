@@ -2,11 +2,18 @@
 
 <ul>
     <% @planes.each do |plane|%>
-    <li><%= plane.plane_name%> | capacity > <%= plane.capacity %> </li>
+        <li><%= plane.plane_name%></li>
+        <li>Capacity > <%= plane.capacity%></li>
+        <li><%= link_to 'Show', plane %></li>
+        <% if policy(plane).edit? %>
+            <li><%= link_to 'Edit', edit_plane_path(plane) %></li>
+        <% end %>
+        <% if policy(plane).destroy? %>
+            <li><%= link_to 'Destroy', plane, method: :delete, data: { confirm: 'Are you sure?' }%></li>
+        <% end %>
     <% end %>
 </ul>
 
 <% if policy(Plane).create? %>
     <%= link_to "New plane", new_plane_path %>    
 <% end %>
-

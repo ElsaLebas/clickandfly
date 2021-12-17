@@ -1,0 +1,12 @@
+<h2>This is my index page for planes</h2>  
+
+<ul>
+    <% @planes.each do |plane|%>
+    <li><%= plane.plane_name%> | capacity > <%= plane.capacity %> </li>
+    <% end %>
+</ul>
+
+<% if policy(Plane).create? %>
+    <%= link_to "New plane", new_plane_path %>    
+<% end %>
+

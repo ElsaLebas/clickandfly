@@ -1,7 +1,11 @@
 <h1>This is Click And Fly HOME</h1>
 
-<p><%= link_to "Sign Up", new_user_registration_path %> </p>
-<p><%= link_to "Log In", new_user_session_path %> </p>
 
-<%#= link_to "Log Out", destroy_user_session_path%>
-<p><%= link_to "New plane", new_plane_path %> </p>
+<% if user_signed_in? %>
+        <li><%= link_to "Home", "#" %></li>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete%></li>
+        <li><%= link_to "Create a new plane", new_plane_path %></li>
+<% else %>
+        <li><%= link_to "Login", new_user_session_path%></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+<% end %>

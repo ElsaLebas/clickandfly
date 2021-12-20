@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 root to: "pages#home"
-resources :planes
-
+resources :planes do
+  resources :bookings, only: [ :new, :create ]
+end
 end
 
 
@@ -15,7 +16,6 @@ end
   # get "planes/:id/edit", to: "planes#edit", as: :edit_plane
   # patch "planes/:id/update", to: "planes#update"
   # delete "planes/:id/destroy", to: "planes#destroy"
-
 
 
 
